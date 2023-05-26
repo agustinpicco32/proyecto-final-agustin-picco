@@ -1,0 +1,180 @@
+html *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+@media (min-width: 992px){
+    header{
+        align-items: start !important;
+    }
+    .footer{
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    position: sticky;
+    background-color: rgb(7, 7, 15);
+}
+.menu-nav li {
+    display: flex;
+    background-color: rgb(40, 147, 235);
+    justify-content: center;
+    margin: 1rem;
+    padding: 10px;
+    border: solid 1px;
+    }
+.menu-nav a {
+    color: aliceblue;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.logo img{
+    display: flex;
+    width: 250px;
+    padding: 20px;
+}
+.logo p {
+    font-family: 'Gilda Display', serif;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: gold;
+    top: 4rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(7, 7, 15);
+}
+.footer img{
+    width: 200px;
+}
+.footer p{
+    gap: 10px;
+    color: white;
+    padding: 10px;
+}
+.patrocinio3 {
+    width: 100px;
+}
+.texto-inicio{
+    padding: 30px;
+}
+/*energias renovables*/
+
+@media (min-width: 768px){
+    .energias-renovables{
+        flex-direction: row !important;
+        justify-content: space-around !important;
+    }
+}
+.contenedor-renovables{
+    padding: 10px;
+}
+.energias-renovables{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+.imagen-electricidad{
+    width: 250px;
+    padding: 20px;
+}
+.texto-renovables{
+    padding: 40px 10%;
+    color: black;
+    background-size: 25% auto;
+    
+}
+/*contacto*/
+@media (min-width: 1024px){
+    .carrusel{
+        padding: 80px;
+        margin: 0px 30px
+    }
+}
+.contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.mapa{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    display: flex;
+    padding: 30px;
+}
+.formulario label{
+    display: grid;
+}
+.texto-contacto{
+    padding: 60px 10%;
+    color: black;
+    background-color: #fff;
+    background-size: 25% auto;
+}
+/*index*/
+
+
+
+.banner{
+    padding: 60px 10%;
+    min-height: calc(50vh);
+    background-color: #444;
+    background-blend-mode: overlay;
+    background-size: 100%;
+    background-position: center center;
+    color: #fff;
+    background-image:url(../assets/idea2.jpg);
+}
+.texto-index{
+    padding: 60px 10%;
+    color: black;
+    background-color: #fff;
+    background-size: 25% auto;
+}
+.img, .img2, .img3, .img4{
+    padding: 60px 10%;
+    min-height: calc(23vh);
+    background-color: #444;
+    background-blend-mode: overlay;
+    background-size: 100%;
+    background-position: center center;
+    color: #fff;}
+
+    @media (min-width: 720px){
+        .img, .img2, .img3, .img4{
+            min-height: calc(45vh);
+        }
+    }
+.img2{ 
+    background-image:url(../assets/profesor-universitario.jpg);
+}
+.img3{
+    background-image:url(../assets/hombre\ trabajando\ alta\ tension.jpg);
+}
+.img4{
+    background-image: url(../assets/tablet.jpg);
+}
