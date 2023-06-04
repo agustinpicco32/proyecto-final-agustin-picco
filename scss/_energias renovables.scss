@@ -1,0 +1,44 @@
+/*energias renovables*/
+.imagen-paisaje{
+    @include flex-centrado-columna;
+    align-items: center;
+    padding: $micro 10%;
+}
+.contenedor-renovables{
+    padding: $micro;
+}
+.energias-renovables{
+    @include flex-centrado-columna;
+    align-items: center;
+    @include tablet2{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.imagen-electricidad{
+    width: 250px;
+    padding: $mini;
+}
+.texto-renovables{
+    @include flex-centrado-columna;
+    padding: 40px 10%;
+    color: black;
+    background-size: 25% auto;
+}
+.renovables-beneficios{
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        img{
+            padding: 10px;
+        }
+    }
+    .carrusel{
+        padding: 7px
+    }
+    .texto-beneficios{
+        @include flex-centrado-columna;
+        align-items: center;
+        padding: 10px;
+    }
+}

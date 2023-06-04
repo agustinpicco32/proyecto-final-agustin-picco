@@ -1,180 +1,439 @@
-html *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-}
-@media (min-width: 992px){
-    header{
-        align-items: start !important;
-    }
-    .footer{
-        flex-direction: row !important;
-        justify-content: space-between;
-    }
-}
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    position: sticky;
-    background-color: rgb(7, 7, 15);
-}
-.menu-nav li {
-    display: flex;
-    background-color: rgb(40, 147, 235);
-    justify-content: center;
-    margin: 1rem;
-    padding: 10px;
-    border: solid 1px;
-    }
-.menu-nav a {
-    color: aliceblue;
-    text-decoration: none;
-}
-img {
-    max-width: 100%;
+/*mediaqueries*/
+/*conatiners*/
+/*medidas*/
+/*paleta de colores*/
+/*mixin de codigos*/
+/*index*/
+.banner {
+  padding: 60px 10%;
+  min-height: 50vh;
+  background-color: #444;
+  background-blend-mode: overlay;
+  background-size: 100%;
+  background-position: center center;
+  color: #fff;
+  background-image: url(../assets/idea.png);
 }
 
-.logo img{
-    display: flex;
-    width: 250px;
-    padding: 20px;
+.texto-index {
+  padding: 60px 10%;
+  color: black;
+  background-color: #fff;
+  background-size: 25% auto;
+}
+
+.img, .img2, .img3, .img4 {
+  padding: 60px 10%;
+  min-height: 23vh;
+  background-color: #444;
+  background-blend-mode: overlay;
+  background-size: 100%;
+  background-position: center center;
+  color: #fff;
+}
+@media screen and (min-width: 720px) {
+  .img, .img2, .img3, .img4 {
+    min-height: 45vh;
+  }
+}
+
+.img2 {
+  background-image: url(../assets/profesor-universitario.jpg);
+}
+
+.img3 {
+  background-image: url(../assets/hombre\ trabajando\ alta\ tension.jpg);
+}
+
+.img4 {
+  background-image: url(../assets/tablet.jpg);
+}
+
+/*contacto*/
+.texto-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 10%;
+  color: black;
+  background-size: 25% auto;
+}
+
+.img-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .img-contacto img {
+    margin-top: 10px;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carrusel {
+    padding: 100px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contacto-locales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacto-locales img {
+    padding: 10px;
+  }
+}
+
+.titulo-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 10%;
+  background-color: #444;
+  color: #fff;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.padre-redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.padre-redes img {
+  width: 60px;
+}
+
+@media screen and (min-width: 992px) {
+  .contacto-ubicacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacto-ubicacion .mapa {
+    padding: 30px;
+  }
+}
+
+.mapa {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.texto-formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 10%;
+  background-color: #444;
+  color: #fff;
+}
+
+.formulario {
+  display: flex;
+  padding: 30px;
+}
+.formulario label {
+  display: grid;
+}
+
+/*energias renovables*/
+.imagen-paisaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.contenedor-renovables {
+  padding: 10px;
+}
+
+.energias-renovables {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .energias-renovables {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.imagen-electricidad {
+  width: 250px;
+  padding: 20px;
+}
+
+.texto-renovables {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 10%;
+  color: black;
+  background-size: 25% auto;
+}
+
+@media screen and (min-width: 992px) {
+  .renovables-beneficios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .renovables-beneficios img {
+    padding: 10px;
+  }
+}
+.renovables-beneficios .carrusel {
+  padding: 7px;
+}
+.renovables-beneficios .texto-beneficios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.texto-muestrario {
+  padding: 60px 10%;
+  color: black;
+  background-color: #fff;
+  background-size: 25% auto;
+}
+
+.texto-muestrario2 {
+  padding: 60px 10%;
+  color: black;
+  background-color: #fff;
+  background-size: 25% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  color: #fff;
+}
+
+.marcas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.padre-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #444444, #6e6e6e, #9b9b9c, #cacacc, #fbfcff);
+  gap: 3rem;
+}
+.padre-cards img {
+  max-width: 287px;
+  max-height: 314px;
+}
+.padre-cards img:hover {
+  border-radius: 5%;
+}
+.padre-cards .card {
+  background-color: rgb(7, 7, 15);
+  color: #fff;
+  max-height: 400px;
+  box-shadow: 5px 5px 10px 1px #444444;
+  border: solid 2px;
+  border-color: #444;
+}
+.padre-cards .card:hover {
+  border-radius: 10%;
+  background-color: #444;
+}
+@media screen and (min-width: 768px) {
+  .padre-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .padre-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contenedor-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contenedor-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.contenedor-banner .banner-uno, .contenedor-banner .banner-dos, .contenedor-banner .banner-tres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-banner .banner-uno iconify-icon, .contenedor-banner .banner-dos iconify-icon, .contenedor-banner .banner-tres iconify-icon {
+  font-size: 80px;
+  gap: 3rem;
+}
+
+.texto-cursos {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 10%;
+  color: black;
+  background-size: 25% auto;
+}
+.texto-cursos img {
+  margin-top: 30px;
+}
+
+.imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10%;
+  color: black;
+  background-size: 25% auto;
+}
+
+.texto-h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 10%;
+  background-color: #444;
+  color: #fff;
+}
+
+.texto-cat3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 10%;
+  background-color: #444;
+  color: #fff;
+  align-items: center;
+}
+
+.tipos, .informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .tipos, .informacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tipos img, .informacion img {
+    padding: 30px;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  position: sticky;
+  background-color: rgb(7, 7, 15);
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo img {
+  display: flex;
+  width: 250px;
+  padding: 20px;
 }
 .logo p {
-    font-family: 'Gilda Display', serif;
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    color: gold;
-    top: 4rem;
+  font-family: "Gilda Display", serif;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: gold;
+  top: 4rem;
 }
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(7, 7, 15);
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(7, 7, 15);
 }
-.footer img{
-    width: 200px;
+@media screen and (min-width: 992px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-.footer p{
-    gap: 10px;
-    color: white;
-    padding: 10px;
+.footer p {
+  gap: 10px;
+  color: white;
+  padding: 10px;
 }
-.patrocinio3 {
-    width: 100px;
+.footer img {
+  width: 200px;
 }
-.texto-inicio{
-    padding: 30px;
+.footer .patrocinio3 {
+  width: 100px;
 }
-/*energias renovables*/
+.footer .texto-inicio {
+  padding: 30px;
+}
 
-@media (min-width: 768px){
-    .energias-renovables{
-        flex-direction: row !important;
-        justify-content: space-around !important;
-    }
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.contenedor-renovables{
-    padding: 10px;
-}
-.energias-renovables{
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: center;
-}
-.imagen-electricidad{
-    width: 250px;
-    padding: 20px;
-}
-.texto-renovables{
-    padding: 40px 10%;
-    color: black;
-    background-size: 25% auto;
-    
-}
-/*contacto*/
-@media (min-width: 1024px){
-    .carrusel{
-        padding: 80px;
-        margin: 0px 30px
-    }
-}
-.contacto {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-}
-.mapa{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-.formulario{
-    display: flex;
-    padding: 30px;
-}
-.formulario label{
-    display: grid;
-}
-.texto-contacto{
-    padding: 60px 10%;
-    color: black;
-    background-color: #fff;
-    background-size: 25% auto;
-}
-/*index*/
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
 
+@media screen and (min-width: 992px) {
+  header {
+    align-items: start;
+  }
+}
 
-.banner{
-    padding: 60px 10%;
-    min-height: calc(50vh);
-    background-color: #444;
-    background-blend-mode: overlay;
-    background-size: 100%;
-    background-position: center center;
-    color: #fff;
-    background-image:url(../assets/idea2.jpg);
-}
-.texto-index{
-    padding: 60px 10%;
-    color: black;
-    background-color: #fff;
-    background-size: 25% auto;
-}
-.img, .img2, .img3, .img4{
-    padding: 60px 10%;
-    min-height: calc(23vh);
-    background-color: #444;
-    background-blend-mode: overlay;
-    background-size: 100%;
-    background-position: center center;
-    color: #fff;}
-
-    @media (min-width: 720px){
-        .img, .img2, .img3, .img4{
-            min-height: calc(45vh);
-        }
-    }
-.img2{ 
-    background-image:url(../assets/profesor-universitario.jpg);
-}
-.img3{
-    background-image:url(../assets/hombre\ trabajando\ alta\ tension.jpg);
-}
-.img4{
-    background-image: url(../assets/tablet.jpg);
-}
+/*# sourceMappingURL=styles.css.map */

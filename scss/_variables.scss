@@ -1,0 +1,47 @@
+/*mediaqueries*/ 
+@mixin mobile{
+    @media screen and (min-width: 0px) {
+        @content;
+    }
+}
+@mixin tablet1{
+    @media screen and (min-width: 720px) {
+        @content;
+    }
+}
+@mixin tablet2{
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin desktop{
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+/*conatiners*/ 
+
+@mixin cajita1 {
+    padding: 60px 10%;
+    color: black;
+    background-color: #fff;
+    background-size: 25% auto;
+}
+/*medidas*/
+$micro: 10px; 
+$mini: 20px;
+$medio: 30px;
+$grande: 60px;
+$muy-grande: 80px;
+
+/*paleta de colores*/ 
+$gris:#444;
+$gris-oscuro:rgb(7, 7, 15);
+
+/*mixin de codigos*/ 
+
+@mixin flex-centrado-columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

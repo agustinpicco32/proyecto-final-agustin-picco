@@ -1,0 +1,25 @@
+.footer{
+    @include flex-centrado-columna;
+    align-items: center;
+    background-color: $gris-oscuro;
+    @include desktop{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    p{
+        gap: $micro;
+        color: white;
+        padding: $micro;
+    }
+    img{
+        width: 200px;
+    }
+    .patrocinio3 {
+        width: 100px;
+    }
+    .texto-inicio{
+        padding: $medio;
+    }
+    
+}
+

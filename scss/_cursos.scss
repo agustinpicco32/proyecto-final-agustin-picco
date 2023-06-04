@@ -1,0 +1,45 @@
+.texto-cursos{
+    display: flex;
+    @include flex-centrado-columna;
+    padding: $grande 10%;
+    color: black;
+    background-size: 25% auto;
+    img{
+        margin-top: 30px;
+    }
+}
+.imagen{
+        @include flex-centrado-columna;
+        align-items: center
+}
+.texto-h1{
+    @include flex-centrado-columna;
+    align-items: center;
+    padding: $grande 10%;
+    color: black;
+    background-size: 25% auto;
+}
+.texto-h2{
+    @include flex-centrado-columna;
+    padding: $grande 10%;
+    background-color: $gris;
+    color: #fff;
+}
+.texto-cat3{
+    @include flex-centrado-columna;
+    padding: $grande 10%;
+    background-color: $gris;
+    color: #fff;
+    align-items: center;
+}
+.tipos, .informacion{
+    @include flex-centrado-columna;
+    align-items: center;
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        img{
+            padding: 30px;
+        }
+    }
+}

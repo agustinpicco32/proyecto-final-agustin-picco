@@ -1,0 +1,77 @@
+/*contacto*/
+.texto-contacto{
+    @include flex-centrado-columna;
+    padding: $grande 10%;
+    color: black;
+    background-size: 25% auto;
+}
+.img-contacto{
+    @include flex-centrado-columna;
+    align-items: center;
+    padding: 20px;
+    
+    img { @include tablet2{
+        margin-top: 10px;
+        width: 500px;
+        }
+    }
+}
+.carrusel{
+    @include tablet2{
+        padding: 100px;
+    }
+}
+.contacto-locales{
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        img{
+            padding: 10px;
+        }
+    }
+}
+.titulo-redes{
+    @include flex-centrado-columna;
+    padding: $grande 10%;
+    background-color: $gris;
+    color: #fff;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.padre-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    img{
+        width: 60px;  
+    }
+}
+.contacto-ubicacion{
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .mapa{
+                padding: 30px;
+        }
+    }
+}
+.mapa{
+    margin-top: $micro;
+    margin-bottom: $medio;
+    display: flex;
+    justify-content: center;
+}
+.texto-formulario{
+    @include flex-centrado-columna;
+    padding: $grande 10%;
+    background-color: $gris;
+    color: #fff;
+}
+.formulario{
+    display: flex;
+    padding: $medio;
+    label{
+        display: grid;
+    }
+}

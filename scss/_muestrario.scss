@@ -1,0 +1,73 @@
+.texto-muestrario{
+    @include
+        cajita1
+}
+.texto-muestrario2{
+    @include cajita1;
+    @include flex-centrado-columna;
+    align-items: center;
+    background-color:$gris;
+    color: #fff; 
+}
+.marcas{
+    @include flex-centrado-columna;
+        align-items: center;
+    margin-bottom: $grande;
+}
+.padre-cards{
+    @include flex-centrado-columna;
+    align-items: center;
+    // margin-top: $mini;
+    background-image: linear-gradient(to bottom, #444444, #6e6e6e, #9b9b9c, #cacacc, #fbfcff);
+    gap: 3rem;
+    img{
+        max-width: 287px;
+        max-height: 314px;
+        
+    }
+    img:hover{
+        border-radius: 5%;
+    }
+    .card{
+        background-color: $gris-oscuro;
+        color: #fff;
+        max-height: 400px;
+        box-shadow: 5px 5px 10px 1px #444444;
+        border: solid 2px;
+        border-color: $gris;
+    }
+    .card:hover {
+        border-radius: 10%;
+        background-color: $gris;
+    }
+    @include tablet2{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        justify-items: center;
+    }
+
+    @include desktop{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+.contenedor-banner{ 
+    @include flex-centrado-columna;
+        align-items: center;
+        margin: 30px;
+    @include tablet2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr)
+        
+    }
+    .banner-uno, .banner-dos, .banner-tres{
+        @include flex-centrado-columna;
+        align-items: center;
+        iconify-icon{
+        font-size: 80px;
+        gap: 3rem;
+        
+        }
+        
+}
+}

@@ -8,11 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
-    <title>Contacto</title>
-    <link rel="shortcut icon" href="../assets/Mi-proyecto.png" type="image/x-icon">
+    <!-- ANIMACIONES -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- CSS PROPIO -->
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../assets/Mi-proyecto.png" type="image/x-icon">
+    <!-- etiquetas seo -->
+    <meta name="description" content="Aqui podras encontrar informacion para contactarte con nosotros y nuestras infraestructuras">
+    <meta name="keywords" content="mapa, contacto, cursos electricista, electricidad, I.E.A.P., numero de electricista">
+    <title>Contacto | I.E.A.P.</title>
 </head>
 <body>
     <header>
@@ -20,7 +27,8 @@
                 <img src="../assets/Mi-proyecto.png" alt="Logo">
                 <p>I.E.A.P.</p>
         </section>
-        <section><!--Menu de navegacion-->
+<!--Menu de navegacion-->
+        <section>
             <nav class="navbar navbar-dark navbar-expand-lg position-absolute bottom-0 end-0">
                 <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -64,53 +72,138 @@
         </section>
     </header>
     <main class="contacto">
-        <section class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6808.860365157237!2d-64.497702!3d-31.429822!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6640d6777c71%3A0x20eb18669e8abf4f!2sElectricidad%20Centro!5e0!3m2!1ses-419!2sar!4v1684532920072!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
             <div class="texto-contacto" >
-                <h2>Visitanos en nuestros locales</h2>
-                <p>Hacemos envios a todo el pais, envienos su contacto y un asesor de nuestros locales se pondra en contacto con usted.</p>
+                <h1>CONTACTENOS</h1>&nbsp;
+                <p> Por cualquier pedido y cosnulta que tenga sobre nuestros producos y cursos.</p>
             </div>
-<!--carrusel de imagenes-->
-        <section class="carrusel">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/local1.jpg" class="d-block w-100" alt="...">
+            <div class="img-contacto">
+                <img src="../assets/contacto-slide.png" alt="contacto-slide">
+            </div>
+
+            <div class="titulo-redes" data-aos="fade-down">
+                <h3>
+                    Seguinos en nuestras redes soaciales
+                </h3>
+            </div>
+
+            <div class="padre-redes">
+                
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../assets/instagram.svg" alt="Logo Instagram" class="redes">
+                </a>
+            
+                <a href="https://www.tiktok.com" target="_blank">
+                    <img src="../assets/tiktok-icon.svg" alt="Logo Tiktok" class="redes">
+                </a>
+            
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../assets/facebook.svg" alt="Logo Facebook" class="redes">
+                </a>
+            
+                <a href="https://api.whatsapp.com/send?phone=5491112345678" target="_blank">
+                    <img src="../assets/whatsapp-icon.svg" alt="Logo Whatsapp" class="redes">
+                </a>
+            </div>
+
+
+        <section class="contacto-locales">
+            <div class="texto-contacto">
+                <h2>LOCALES</h2>&nbsp;
+                <P>Tambien podes visitarnos en nuestros locales</P>
+                <p>Podras encontrar todos nuestros productos, las mejores marcas, precio y calidad</p>&nbsp;
+                <p>Comercial dedicado a la venta de materiales eléctricos e iluminación conformada con la premisa de crear alianzas con nuestros proveedores que son las mejores marcas del rubro y así llevar a nuestros clientes excelentes propuestas comerciales y de servicio.</p>
+            </div>
+            <!--carrusel de imagenes-->
+            <div class="carrusel">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/local1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/local2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/local3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/local4.jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/local2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/local3.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/local4.jpg" class="d-block w-100" alt="...">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </section>
-        <section class="formulario">
-            <form>
-                <label for="nombre">nombre y apellido</label>
-                <input type="text" name="" id="nombre">
-                <label for="email">Email</label>
-                <input type="email" name="" id="email">
-                <label for="tel">Telefono</label>
-                <input type="tel" id="tel">
-                <input type="submit" name="enviar formulario" id="">
-            </form>
+        <!-- mapa -->
+        <section class="contacto-ubicacion">
+            <div class="texto-contacto">
+                <h2>UBICACIONES</h2>&nbsp;
+                <P>Estamos ubicados en el siguiente mapa</P>
+                <p>Podras encontrar todos nuestros productos, las mejores marcas, precio y calidad</p>&nbsp;
+                <p>Comercial dedicado a la venta de materiales eléctricos e iluminación conformada con la premisa de crear alianzas con nuestros proveedores que son las mejores marcas del rubro y así llevar a nuestros clientes excelentes propuestas comerciales y de servicio.</p>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.450960065861!2d-64.49909642356212!3d-31.42924979687477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6640d6777c71%3A0x20eb18669e8abf4f!2sElectricidad%20Centro!5e0!3m2!1ses-419!2sar!4v1685800006142!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
-        
+        <!-- formulario -->
+        <h3 class="texto-formulario">
+            Si deseas consultar mayor información sobre nuestros servicios o tienes alguna duda al respecto, no dudes en solicitar una consultoría gratuita y uno de nuestros asesores te contactará a la brevedad.
+        </h3>
+        <section class="formulario">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="validationDefault01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefault02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefaultUsername" class="form-label">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationDefault03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault04" class="form-label">State</label>
+                        <select class="form-select" id="validationDefault04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                            Agree to terms and conditions
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </section>
     </main>
+        <!-- footer -->
     <footer>
         <section class="footer">
             <img src="../assets/patrocinio1.png" alt="patrocinio">
@@ -121,6 +214,12 @@
             <p>Todos los derechos reservados por I.E.A.P. &copy;</p>
         </section>
     </footer>
+<!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+<!-- iconfy -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+<!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

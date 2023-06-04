@@ -1,0 +1,39 @@
+/*index*/
+
+.banner{
+    padding: $grande 10%;
+    min-height: calc(50vh);
+    background-color: $gris;
+    background-blend-mode: overlay;
+    background-size: 100%;
+    background-position: center center;
+    color: #fff;
+    background-image:url(../assets/idea.png);
+}
+.texto-index{
+    @include cajita1
+}
+
+.img, .img2, .img3, .img4{
+    padding: $grande 10%;
+    min-height: calc(23vh);
+    background-color: $gris;
+    background-blend-mode: overlay;
+    background-size: 100%;
+    background-position: center center;
+    color: #fff;
+    @include tablet1{
+        min-height: calc(45vh);
+    }
+}
+
+.img2{ 
+    background-image:url(../assets/profesor-universitario.jpg);
+}
+.img3{
+    background-image:url(../assets/hombre\ trabajando\ alta\ tension.jpg);
+}
+.img4{
+    background-image: url(../assets/tablet.jpg);
+}
+

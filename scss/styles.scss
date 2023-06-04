@@ -1,0 +1,28 @@
+@import "variables";
+@import "inicio";
+@import "contacto";
+@import "energias renovables";
+@import "muestrario";
+@import "cursos";
+@import "header";
+@import "footer";
+
+
+
+html *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    @include flex-centrado-columna;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    @include desktop{
+        align-items: start
+    }
+}
+
+
+
