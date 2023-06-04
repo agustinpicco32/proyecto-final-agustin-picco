@@ -8,10 +8,10 @@
 .img-contacto{
     @include flex-centrado-columna;
     align-items: center;
-    padding: 20px;
+    padding: $mini;
     
     img { @include tablet2{
-        margin-top: 10px;
+        margin-top: $micro;
         width: 500px;
         }
     }
@@ -26,7 +26,7 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         img{
-            padding: 10px;
+            padding: $micro;
         }
     }
 }
@@ -44,7 +44,7 @@
     align-items: center;
     justify-content: space-evenly;
     img{
-        width: 60px;  
+        width: $grande;  
     }
 }
 .contacto-ubicacion{
@@ -52,7 +52,7 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         .mapa{
-                padding: 30px;
+                padding: $medio;
         }
     }
 }

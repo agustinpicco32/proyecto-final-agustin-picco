@@ -30,7 +30,7 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         img{
-            padding: 10px;
+            padding: $micro;
         }
     }
     .carrusel{
@@ -39,6 +39,6 @@
     .texto-beneficios{
         @include flex-centrado-columna;
         align-items: center;
-        padding: 10px;
+        padding: $micro;
     }
 }

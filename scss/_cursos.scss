@@ -5,7 +5,7 @@
     color: black;
     background-size: 25% auto;
     img{
-        margin-top: 30px;
+        margin-top: $medio;
     }
 }
 .imagen{
@@ -39,7 +39,7 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         img{
-            padding: 30px;
+            padding: $medio;
         }
     }
 }

@@ -3,9 +3,11 @@ header {
     align-items: center;
     gap: 18px;
     position: sticky;
-    background-color: $gris-oscuro
+    background-color: $gris-oscuro;
+    @include desktop{
+        align-items: start
+    }
 }
-
 img {
     max-width: 100%;
 }

@@ -54,7 +54,7 @@
 .contenedor-banner{ 
     @include flex-centrado-columna;
         align-items: center;
-        margin: 30px;
+        margin: $medio;
     @include tablet2{
         display: grid;
         grid-template-columns: repeat(3,1fr)
